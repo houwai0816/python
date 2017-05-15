@@ -1,6 +1,6 @@
 #!/pyhton/usr/bin
 from collections import Counter
-with open('tcp_output.txt') as tcp:
+with open('tcp_info.txt') as tcp:
 	print '------------------------------------------------------------------'
 	print '               SOURCE TO DESTINATION PORT LISTENING               '
 	print '------------------------------------------------------------------'
@@ -15,7 +15,7 @@ with open('tcp_output.txt') as tcp:
 
 
 
-dns_file=open('dns_output.txt')
+dns_file=open('dns_info.txt')
 wc= Counter(dns_file.read().split())
 print '\n\n'
 print '******************************************************************'
@@ -26,7 +26,7 @@ for item in wc.items():
 	print'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
 
 
-http_file=open('http_output.txt')
+http_file=open('http_info.txt')
 wc= Counter(http_file.read().split())
 print '\n\n'
 print '******************************************************************'
