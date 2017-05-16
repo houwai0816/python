@@ -63,21 +63,5 @@ while x<3:										#loop when x <3
 	x=x+1										#increment x by 1
 print colored('The file is transferred','green')					#print message
 
-
-
-#s.recv(1024)
-#decision=raw_input('')
-#s.send(decision)
-#while(1):
-	#with open('filtered.txt','wb') as u:
-		#print "file opened"
-		#w=s.recv(1024)
-		#print w
-		#while (w):
-			#u.write(w)
-			#if not w:break
-			#w=s.recv(1024)
-		#print 'The result had been saved to filtered.txt'
-		#u.close()
-s.close()
+s.close()										#close the connection
 print colored('Connection terminate','red')
